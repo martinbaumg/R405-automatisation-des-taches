@@ -1,0 +1,84 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[francais]{babel}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
+
+% \usepackage{mathpazo} --> Police à utiliser lors de rapports plus sérieux
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\rhead{}
+\chead{}
+\rfoot{\thepage}
+\lfoot{Martin Baumgaertner}
+\cfoot{}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+\begin{titlepage}
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+	\center 
+	\textsc{\LARGE iut de colmar}\\[6.5cm] 
+	\textsc{\Large R405}\\[0.5cm] 
+	\textsc{\large Année 2022-23}\\[0.5cm]
+	\HRule\\[0.75cm]
+	{\huge\bfseries Automatisation des tâches}\\[0.4cm]
+	\HRule\\[1.5cm]
+	\textsc{\large martin baumgaertner}\\[6.5cm] 
+
+	\vfill\vfill\vfill
+	{\large\today} 
+	\vfill
+\end{titlepage}
+\newpage
+\tableofcontents
+\newpage
+\section{CM 1 - 6 mars 2023}
+\subsection{Introduction}
+\textbf{Système d'exploitation MS-DOS :}\\
+
+    \begin{itemize}
+        \item mono-tâches
+        \item mono-utilisateur
+        \item dédidé pour les plateformes x86
+        \item langage de script : batch
+        \item script .bat 
+        \item émulation partielle via cmd.exe\\
+    \end{itemize}
+
+En parallèle ils ont développé Windows NT, ce qui a permis d'avoir plusieurs utilisateurs, 
+en gros ça a permis de faire du multi-tâches, une interface avec la bibliothèque Win32.\\
+
+\subsection{PowerShell}
+\textbf{PowerShell :}\\
+
+    \begin{itemize}
+        \item Intérpréteur de commandes
+        \item repose sur sur le framework .NET
+        \item commandes PowerShell, Unix et MS-DOS
+        \item Tout est objet sous PowerShell
+        \item script .ps1\\
+    \end{itemize}
+
+\subsection{PowerShell ISE}
+\textbf{PowerShell ISE :}\\
+
+    \begin{itemize}
+        \item PowerShell Integrated Scripting Environment
+        \item éditeur de script
+        \item intègre un terminal PowerShell
+        \item intègre un débogueur de script
+        \item intègre un explorateur de modules\\
+    \end{itemize}
+
+
+
+
+\end{document}
