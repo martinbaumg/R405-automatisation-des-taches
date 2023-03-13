@@ -5,6 +5,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{listings}
 \usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{listings}
 \usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
 
 % \usepackage{mathpazo} --> Police à utiliser lors de rapports plus sérieux
@@ -78,7 +80,143 @@ en gros ça a permis de faire du multi-tâches, une interface avec la bibliothè
         \item intègre un explorateur de modules\\
     \end{itemize}
 
+\section{TD 1 - 10 mars 2023}
+\subsection{Question 1}
+Ce que les commandes retourent :\\
+\begin{enumerate}
+    \item \textbf{Get-ChildItem} = Donne les dossiers dans le répertoire où on est 
+    \item \textbf{Get-Service} = Donne les services qui sont lancés
+    \item \textbf{Get-Command} = Donne les commandes qui sont disponibles
+    \item \textbf{Get-Process} = Donne les processus qui sont lancés
+    \item \textbf{Get-Help} = Donne l'aide pour une commande
+    \item \textbf{Get-Location} = Donne le chemin du répertoire où on est
+    \item \textbf{New-Item} = Crée un fichier ou un dossier
+    \item \textbf{Get-Member} = Donne les membres d'un objet
+    \item \textbf{Add-Content} = Ajoute du contenu dans un fichier
+    \item \textbf{Get-ItemProperty} = Donne les propriétés d'un fichier
+    \item \textbf{Get-Item} = Donne les informations d'un fichier
+    \item \textbf{Measure-Object} = Donne les informations d'un fichier
+    \item \textbf{Sort-Object} = Trie les objets
+\end{enumerate}
+
+\subsection{Question 2}
+Pour créer un fichier appelé \textbf{MonFichier.txt} il faut faire la commande
+suivante : \texttt{New-Item -Path U:/ Documents/ -Name MonFichier.txt -ItemType File}\\
+
+Ensuite, pour écrire quelques lignes dedans il faut faire la commande suivante :\\
+
+\texttt{Add-Content -Path U:/ Documents/MonFichier.txt -Value "Ligne 1"}\\
+
+\subsection{Exercice 3}
+Pour créer un dossier il faut faire : 
+\texttt{New-Item -Path U:/ Documents/ -Name MonDossier -ItemType Directory}\\
+
+Je crée donc l'arborescence demandée. 
+
+\newpage
+\subsection{Exercice 4}
+Pour déplacer mon fichier \textbf{MonFichier.txt} dans le dossier \textbf{D4} il faut faire :\\
+
+\texttt{Move-Item -Path U:/Documents/MonFichier.txt -Destination U:/D1/D2/D4/}\\
+
+\subsection{Exercice 5}
+Après avoir éxecuté la commande \texttt{Get-Acl monfichier.txt | Fomat-List}, 
+on obtient toutes les informations sur des détails sur les droits d'accès. Je 
+peux donc en déduire que le propriétaire du fichier est \textbf{e2100947}, le groupe
+propriétaire est \textbf{UHA/Utilisateurs du domaine}. Les droits d'accès sur 
+ce fichier sont Allow et modify pour l'utilisateur, et full-control pour les admins. 
+
+\subsection{Exercice 6}
+Pour compter toutes les commandes possibles, il faut faire de la commande suivante :\\
+
+\texttt{Get-Command | Measure-Object} : On obtient le résultat qui est 2492.\\
+
+\subsection{Exercice 7}
+Pour afficher les 10 premières lignes du fichier qu'on a crée avec la commande 
+Select-Object, il faut faire la commande suivante :\\
+
+\texttt{Get-Content -Path U:/Documents/D1/D2D/D4/MonFichier.txt | Select-Object -First 10}\\
+
+\subsection{Exercice 8}
+Pour afficher la troisème ligne du fichier qu'on a crée avec la commande Select-Object,
+il faut faire la commande suivante :\\
+
+\texttt{Get-Content -Path U:/Documents/D1/D2D/D4/MonFichier.txt | Select-Object -Skip 2 -First 1}\\
+
+\subsection{Exercice 9}
+Pour sélectionner dans ce fichier un pattern dont les erreurs seront et le résultat 
+seront rédigés dans un fichier en utilisant la commande Select-String, il faut faire
+la commande suivante :\\
+
+\texttt{Get-Content -Path U:/Documents/D1/D2D/D4/MonFichier.txt | Select-String -Pattern "erreur" -ErrorAction SilentlyContinue | Out-File -FilePath U:/Documents/D1/D2D/D4/Resultat.txt}\\
 
 
+\section{TD 2 - 13 mars 2023}
+\subsection{Exercice 1}
+Pour écrire l’expression régulière qui permet de vérifier qu’un mot est au moins composé de quatre lettres il 
+faut faire la commande suivante :\\
+
+\texttt{\^[a-zA-Z]{4,}\$}\\
+
+par exemple, si on veut vérifier que le mot "test" est bien composé de de quattre lettres on écrit : 
+\texttt{"test" -match "\^[a-zA-Z]{4,}\$"}\\
+
+La commande renvoie \texttt{True} car le mot "test" est bien composé de quatre lettres.\\
+
+
+\subsection{Exercice 2}
+Pour écrire l’expression régulière qui permet de tester qu’il existe un espace entre "je test"
+il faut faire la commande suivante :\\
+
+\texttt{"je test" -match "je\textbackslash s+veux"}\\
+
+La commande renvoie \texttt{True} car il y a bien un espace entre "je" et "test".\\
+
+\newpage
+\subsection{Exercice 3}
+Pour tester si un nom est composé je peux écrire le script suivant :\\
+
+\begin{lstlisting}[language=Python]
+
+    $nom = Jean-Claude
+
+    if ($nom -match "^[a-zA-Z]+-[a-zA-Z]+$") {
+        Write-Host "nom compose"
+    } else {
+        Write-Host "Le prenom n'est pas compose."
+    }
+
+\end{lstlisting}
+
+
+\subsection{Exercice 4}
+Pour tester si une plaque est valide aux normes françaises je peux écrire le script
+suivant pour la plaque proposé :\\
+
+\begin{lstlisting}[language=Python]
+    $plaque = "AX-624-LP"
+
+    if ($plaque -match "^[A-Z]{2}-[0-9]{3}-[A-Z]{2}$") {
+        Write-Host "La plaque d'immatriculation est valide."
+    } else {
+        Write-Host "La plaque d'immatriculation est invalide."
+    }
+\end{lstlisting}
+
+\subsection{Exercice 5}
+
+Pour teser si une adresse mail de type \texttt{nom.prenom@uha.fr} je peux écrire le script suivant :
+
+\begin{lstlisting}[language=Python]
+    
+    $mail = "martin.baumgaertner@uha.fr"
+
+    if ($mail -match "^[a-zA-Z]+.[a-zA-Z]+@uha.fr$") {
+        Write-Host "L'adresse mail est valide."
+    } else {
+        Write-Host "L'adresse mail est invalide."
+    }
+
+\end{lstlisting}
 
 \end{document}

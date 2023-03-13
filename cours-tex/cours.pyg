@@ -1,0 +1,6 @@
+
+    if (\$nom -match "\^[a-zA-Z]+-[a-zA-Z]+\$") {
+        Write-Host "Le prénom est composé."
+    } else {
+        Write-Host "Le prénom n'est pas composé."
+    }
