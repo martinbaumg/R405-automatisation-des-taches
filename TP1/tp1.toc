@@ -1,0 +1,18 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Windows Management Instrumentation}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Exercice 1 - Quelle commande permet d’obtenir les instances des classes WMI ?}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Exercice 2 - Combien d’instances sont disponibles ?}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Exercice 3 - Stockez le résultat de la commande Get-WmiObject -Class Win32\_LogicalDisk...}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Exercice 4 - Comptez le nombre de disques à l’aide d’une commande}{2}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Exercice 5 - Ecrivez un script qui détermine le nombre d’octets pris sur le disque C}{3}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Exercice 6 - Ecrivez un script qui détermine le pourcentage d’occupation du disque C :}{4}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Exercice 7 - Écrivez un script qui détermine le pourcentage d’occupation de chaque disque présent sur la machine.}{4}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Exercice 8 - Vérifier le bon résultat de vos commandes sur la machine Windows de la salle}{5}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Exercice 9 - Avec la commande Get-WmiObject -Class ...}{5}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}Exercice 10 - Donnez la différence}{5}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}Exercice 11 - Avec l’option ComputerName obtenez le ou les adresses MAC des cartes de votre voisin ?}{5}{subsection.1.11}%
+\contentsline {subsection}{\numberline {1.12}Exercice 12 - Que fait la commande Test-Connection ?}{5}{subsection.1.12}%
+\contentsline {subsection}{\numberline {1.13}Exercice 13 - Reprendre la commande précédente pour avoir un résultat binaire}{5}{subsection.1.13}%
+\contentsline {subsection}{\numberline {1.14}Exercice 14}{6}{subsection.1.14}%
+\contentsline {subsubsection}{\numberline {1.14.1}Consigne}{6}{subsubsection.1.14.1}%
+\contentsline {subsection}{\numberline {1.15}Question Bonus - A quoi correspond FAT32}{7}{subsection.1.15}%

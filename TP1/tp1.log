@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.2)  15 MAR 2023 10:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.2)  16 MAR 2023 11:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/martinbaumgaertner/R405-automatisation-des-taches/cours-tex/cours.tex
-(/Users/martinbaumgaertner/R405-automatisation-des-taches/cours-tex/cours.tex
+**/Users/martinbaumgaertner/R405-automatisation-des-taches/TP1/tp1.tex
+(/Users/martinbaumgaertner/R405-automatisation-des-taches/TP1/tp1.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -313,8 +313,8 @@ Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footer
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count303
 \l__pdf_internal_box=\box54
-) (./cours.aux)
-\openout1 = `cours.aux'.
+) (./tp1.aux)
+\openout1 = `tp1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
@@ -415,15 +415,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
- (./cours.out) (./cours.out)
+ (./tp1.out) (./tp1.out)
 \@outlinefile=\write3
-\openout3 = `cours.out'.
+\openout3 = `tp1.out'.
 
  [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./cours.toc)
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./tp1.toc)
 \tf@toc=\write4
-\openout4 = `cours.toc'.
+\openout4 = `tp1.toc'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -431,222 +431,84 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.44 \newpage
               [1]
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 60--63
+
+ []
+
+[2]
+<img/code1.png, id=119, 1369.115pt x 401.5pt>
+File: img/code1.png Graphic file (type png)
+<use img/code1.png>
+Package pdftex.def Info: img/code1.png  used on input line 79.
+(pdftex.def)             Requested size: 418.25368pt x 122.65642pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-
- []
-
-[2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
-
- []
-
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 110.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Overfull \hbox (18.92125pt too wide) in paragraph at lines 109--111
-\T1/cmr/m/n/12 vante : \T1/cmtt/m/n/12 New-Item -Path U:/ Documents/ -Name MonFichier.txt -ItemType File 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--111
-
- []
-
+[3 <./img/code1.png>]
+<img/code2.png, id=128, 1369.115pt x 437.635pt>
+File: img/code2.png Graphic file (type png)
+<use img/code2.png>
+Package pdftex.def Info: img/code2.png  used on input line 98.
+(pdftex.def)             Requested size: 418.25368pt x 133.6955pt.
+<img/code3.png, id=129, 1369.115pt x 473.77pt>
+File: img/code3.png Graphic file (type png)
+<use img/code3.png>
+Package pdftex.def Info: img/code3.png  used on input line 108.
+(pdftex.def)             Requested size: 418.25368pt x 144.73459pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
+[4 <./img/code2.png> <./img/code3.png>]
+Overfull \hbox (11.75804pt too wide) in paragraph at lines 122--126
+\T1/cmr/m/n/12 et \T1/cmr/bx/n/12 Win32_NetworkAdapterConfiguration \T1/cmr/m/n/12 est que la pre-mière re-pré-sente l'adap-
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
-
- []
-
-
-Overfull \hbox (25.34212pt too wide) in paragraph at lines 126--127
-[]\T1/cmtt/m/n/12 Move-Item -Path U:/Documents/MonFichier.txt -Destination U:/D1/D2/D4/ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
-
- []
-
-
-Overfull \hbox (37.6891pt too wide) in paragraph at lines 144--145
-[]\T1/cmtt/m/n/12 Get-Content -Path U:/Documents/D1/D2D/D4/MonFichier.txt | Select-Object
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 147--149
-
- []
-
-
-Overfull \hbox (37.6891pt too wide) in paragraph at lines 150--151
-[]\T1/cmtt/m/n/12 Get-Content -Path U:/Documents/D1/D2D/D4/MonFichier.txt | Select-Object
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--156
-
+Overfull \hbox (34.68993pt too wide) in paragraph at lines 144--149
+\T1/cmr/m/n/12 avec cette ma-chine et qui stocke dans un ta-bleau le nom de la ma-chine (Win32_Desktop)le
  []
 
 [5]
-Overfull \hbox (37.6891pt too wide) in paragraph at lines 157--158
-[]\T1/cmtt/m/n/12 Get-Content -Path U:/Documents/D1/D2D/D4/MonFichier.txt | Select-String
- []
-
-
-Overfull \hbox (1.54381pt too wide) in paragraph at lines 157--158
-\T1/cmtt/m/n/12 -Pattern "erreur" -ErrorAction SilentlyContinue | Out-File -FilePath
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 150--154
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--164
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--169
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--176
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
-
- []
-
-(/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-Underfull \hbox (badness 10000) in paragraph at lines 199--201
-
- []
-
-
-Overfull \hbox (4.64671pt too wide) in paragraph at lines 206--207
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (18.7434pt too wide) in paragraph at lines 208--209
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[7] [8] (./cours.aux)
-Package rerunfilecheck Info: File `cours.out' has not changed.
-(rerunfilecheck)             Checksum: C3BEC62CC37E16FCE3C72AE8C3D08112;2778.
+<img/code5.png, id=142, 1369.115pt x 1485.55pt>
+File: img/code5.png Graphic file (type png)
+<use img/code5.png>
+Package pdftex.def Info: img/code5.png  used on input line 157.
+(pdftex.def)             Requested size: 334.60422pt x 363.04489pt.
+[6 <./img/code5.png>] [7] (./tp1.aux)
+Package rerunfilecheck Info: File `tp1.out' has not changed.
+(rerunfilecheck)             Checksum: 3CB9A89DF1B1E2271206F4599424F809;6850.
  ) 
 Here is how much of TeX's memory you used:
- 14575 strings out of 478268
- 229346 string characters out of 5846348
- 728906 words of memory out of 5000000
- 32524 multiletter control sequences out of 15000+600000
- 482195 words of font info for 54 fonts, out of 8000000 for 9000
+ 14078 strings out of 478268
+ 224435 string characters out of 5846348
+ 535601 words of memory out of 5000000
+ 32094 multiletter control sequences out of 15000+600000
+ 481545 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,63p,306b,1239s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on cours.pdf (9 pages, 187242 bytes).
+ 60i,11n,63p,789b,426s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on tp1.pdf (8 pages, 437247 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 94 named destinations out of 1000 (max. 500000)
- 185 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

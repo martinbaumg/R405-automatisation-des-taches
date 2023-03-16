@@ -1,0 +1,1 @@
+(Get-WmiObject -Class Win32_NetworkAdapterConfiguration | Where-Object {$_.IPAddress -ne $null}).IPAddress[0]

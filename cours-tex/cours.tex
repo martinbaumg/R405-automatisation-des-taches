@@ -80,6 +80,12 @@ en gros ça a permis de faire du multi-tâches, une interface avec la bibliothè
         \item intègre un explorateur de modules\\
     \end{itemize}
 
+\newpage
+\section{CM 2 - 15 mars 2023}
+
+
+
+\newpage
 \section{TD 1 - 10 mars 2023}
 \subsection{Question 1}
 Ce que les commandes retourent :\\
@@ -218,5 +224,40 @@ Pour teser si une adresse mail de type \texttt{nom.prenom@uha.fr} je peux écrir
     }
 
 \end{lstlisting}
+
+\newpage
+\section{TD 3 - 14 mars 2023}
+
+\subsection{Exercice 1}
+Pour créer un script qui juge en fonction d'une note, je crée simplement 
+ce code : 
+\begin{lstlisting}
+    echo "Entrez votre note : "
+    read note
+
+    if (( $note >= 16 && $note <= 20 ))
+    then
+        echo "Tres bien"
+    elif (( $note >= 14 && $note < 16 ))
+    then
+        echo "Bien"
+    elif (( $note >= 12 && $note < 14 ))
+    then
+        echo "Assez bien"
+    elif (( $note >= 10 && $note < 12 ))
+    then
+        echo "Moyen"
+    elif (( $note >= 8 && $note < 10 ))
+    then
+        echo "Insuffisant"
+    else
+        echo "Mediocre"
+    fi
+    
+\end{lstlisting}
+
+Pour les autres exercices, voit tout simplement les fichiers dans le répertoire 
+TD1. 
+
 
 \end{document}
