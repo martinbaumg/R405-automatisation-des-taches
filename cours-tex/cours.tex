@@ -259,5 +259,49 @@ ce code :
 Pour les autres exercices, voit tout simplement les fichiers dans le répertoire 
 TD1. 
 
+\newpage
+\section{TD 4 - 20 mars 2023}
+Voici donc un script bash propose les conditions suivantes : 
+\begin{itemize}
+    \item vérifie l’existence d’un utilisateur
+    \item vérifie l’existence d’un groupe
+    \item vérifie si l'utilisateur appartient à un groupe
+    \item liste l'ensemble des utilisateurs à un groupe
+\end{itemize}
+
+\begin{lstlisting}
+    #!/bin/bash
+
+    echo "Entrez le nom de l'utilisateur : "
+    read user
+
+    echo "Entrez le nom du groupe : "
+    read group
+
+    if grep -q $user /etc/passwd
+    then
+        echo "L'utilisateur $user existe."
+    else
+        echo "L'utilisateur $user n'existe pas."
+    fi
+
+    if grep -q $group /etc/group
+    then
+        echo "Le groupe $group existe."
+    else
+        echo "Le groupe $group n'existe pas."
+    fi
+
+    if grep -q $user /etc/group
+    then
+        echo "L'utilisateur $user appartient au groupe $group."
+    else
+        echo "L'utilisateur $user n'appartient pas au groupe $group."
+    fi
+
+    echo "Voici la liste des utilisateurs du groupe $group : "
+    grep $group /etc/group
+
+\end{lstlisting}
 
 \end{document}

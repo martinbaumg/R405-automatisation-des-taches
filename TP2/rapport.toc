@@ -1,0 +1,11 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Gestion locale des utilisateurs}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Exercice 1 - la liste des utilisateurs de la machine}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Exercice 2 - Après avoir créer un nouvel utilisateur avec Powershell, dans quel groupe celui-ci est présent ?}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Exercice 3}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Exercice 4 - Écrire un script qui affiche le nom d’utilisateur avec la date de sa dernière connexion}{4}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Exercice 5}{4}{subsection.1.5}%
+\contentsline {section}{\numberline {2}Gestion des logs}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Exercice 6 - Quelle option permet d’afficher la liste des logs disponibles ?}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Exercice 7 - Afficher les sources du log système, sans doublon de préférence}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Exercice 8}{5}{subsection.2.3}%
