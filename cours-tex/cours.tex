@@ -44,6 +44,8 @@
 \newpage
 \section{CM 1 - 6 mars 2023}
 \subsection{Introduction}
+\textbf{Le langage powershell est interprété.}\\
+
 \textbf{Système d'exploitation MS-DOS :}\\
 
     \begin{itemize}
@@ -58,6 +60,9 @@
 En parallèle ils ont développé Windows NT, ce qui a permis d'avoir plusieurs utilisateurs, 
 en gros ça a permis de faire du multi-tâches, une interface avec la bibliothèque Win32.\\
 
+"" : affiche les variables, '' ne les affiche pas\\
+set-x set+x = debug 
+
 \subsection{PowerShell}
 \textbf{PowerShell :}\\
 
@@ -68,6 +73,9 @@ en gros ça a permis de faire du multi-tâches, une interface avec la bibliothè
         \item Tout est objet sous PowerShell
         \item script .ps1\\
     \end{itemize}
+
+[ est une commande et tous les arguments de commandes en bash doivent être séparés par des caractères d'espace
+
 
 \subsection{PowerShell ISE}
 \textbf{PowerShell ISE :}\\
@@ -80,11 +88,7 @@ en gros ça a permis de faire du multi-tâches, une interface avec la bibliothè
         \item intègre un explorateur de modules\\
     \end{itemize}
 
-\newpage
-\section{CM 2 - 15 mars 2023}
-
-
-
+   
 \newpage
 \section{TD 1 - 10 mars 2023}
 \subsection{Question 1}
@@ -111,12 +115,14 @@ suivante : \texttt{New-Item -Path U:/ Documents/ -Name MonFichier.txt -ItemType 
 
 Ensuite, pour écrire quelques lignes dedans il faut faire la commande suivante :\\
 
+\texttt{(Get-Process).count}
+
 \texttt{Add-Content -Path U:/ Documents/MonFichier.txt -Value "Ligne 1"}\\
 
 \subsection{Exercice 3}
 Pour créer un dossier il faut faire : 
 \texttt{New-Item -Path U:/ Documents/ -Name MonDossier -ItemType Directory}\\
-
+-z \$var vérifie si chaine caractere est vide 
 Je crée donc l'arborescence demandée. 
 
 \newpage
@@ -156,6 +162,10 @@ la commande suivante :\\
 
 \texttt{Get-Content -Path U:/Documents/D1/D2D/D4/MonFichier.txt | Select-String -Pattern "erreur" -ErrorAction SilentlyContinue | Out-File -FilePath U:/Documents/D1/D2D/D4/Resultat.txt}\\
 
+Exemple : \texttt{\^IUTC[0-9]{3,}\$}
+ne pas oublier les parenthèses autour des chiffres
+
+\^[A-Z]{4} [0-9]{4}\$
 
 \section{TD 2 - 13 mars 2023}
 \subsection{Exercice 1}
